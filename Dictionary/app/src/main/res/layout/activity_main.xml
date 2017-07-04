@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bazz.dictionary.MainActivity"
+    android:transitionGroup="false"
+    android:clickable="false"
+    android:background="@android:color/holo_orange_light"
+    android:touchscreenBlocksFocus="false">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayTR"
+        android:layout_above="@+id/cevirID"
+        android:layout_alignLeft="@+id/ingID1"
+        android:layout_alignStart="@+id/ingID1"
+        android:layout_alignRight="@+id/turkID1"
+        android:layout_alignEnd="@+id/turkID1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayENG"
+        android:layout_below="@+id/ingID2"
+        android:layout_alignLeft="@+id/ingID2"
+        android:layout_alignStart="@+id/ingID2"
+        android:layout_marginTop="38dp"
+        android:layout_alignRight="@+id/turkID2"
+        android:layout_alignEnd="@+id/turkID2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Çevir"
+        android:id="@+id/cevirID"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:onClick="Translate"
+        android:layout_above="@+id/ingID2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="33dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İngilizce"
+        android:id="@+id/ingID1"
+        android:layout_above="@+id/displayTR"
+        android:layout_alignLeft="@+id/ingID2"
+        android:layout_alignStart="@+id/ingID2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Türkçe"
+        android:id="@+id/turkID1"
+        android:layout_above="@+id/displayTR"
+        android:layout_toRightOf="@+id/ingID1"
+        android:layout_toEndOf="@+id/ingID1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İNGİLİZCE"
+        android:id="@+id/ingID2"
+        android:layout_marginRight="43dp"
+        android:layout_marginEnd="43dp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/cevirID"
+        android:layout_alignEnd="@+id/cevirID" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="türkçe"
+        android:id="@+id/turkID2"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/ingID1"
+        android:layout_toEndOf="@+id/ingID1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İNGİLİZCE-TÜRKÇE SÖZLÜK"
+        android:id="@+id/textView"
+        android:layout_marginTop="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/ingID1"
+        android:layout_alignStart="@+id/ingID1"
+        android:editable="false"
+        android:elegantTextHeight="false"
+        android:textColor="#000000" />
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CocaCola</string>
+    <string name="kola">KOLA(250ML)</string>
+    <string name="icetea">ICE TEA(250ML)</string>
+    <string name="seftali">ŞEFTALİ(250ML)</string>
+    <string name="ayran">AYRAN(250ML)</string>
+    <string name="soda">SODA(200ML)</string>
+    <string name="fanta">FANTA(200ML)</string>
+    <string name="icecekarsivi">İÇECEK ARŞİVİ</string>
+    <string name="title_activity_icecek_arsivi">SuSatisi</string>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bazz.nothesaplama.MainActivity"
+    android:background="@color/highlighted_text_material_light">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOT HESAPLAMA"
+        android:id="@+id/baslik1"
+        android:textSize="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="VİZE"
+        android:id="@+id/textView"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/baslik1"
+        android:layout_toLeftOf="@+id/baslik1"
+        android:layout_toStartOf="@+id/baslik1"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="FİNAL"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/finalEditText"
+        android:layout_toRightOf="@+id/baslik1"
+        android:layout_toEndOf="@+id/baslik1"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/vizeEditText"
+        android:layout_below="@+id/textView"
+        android:layout_toStartOf="@+id/sonucButton"
+        android:layout_toLeftOf="@+id/sonucButton" />
+
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/finalEditText"
+        android:layout_alignTop="@+id/vizeEditText"
+        android:layout_toRightOf="@+id/sonucButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sonuc"
+        android:id="@+id/sonucButton"
+        android:onClick="SonucuGoster"
+        android:backgroundTint="#91f18f"
+        android:layout_below="@+id/vizeEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="GPA"
+        android:id="@+id/textView3"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/sonucButton"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/ortalamaEditText"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/baslik1"
+        android:layout_alignStart="@+id/baslik1"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2" />
+</RelativeLayout>

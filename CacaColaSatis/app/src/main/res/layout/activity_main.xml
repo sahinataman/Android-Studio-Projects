@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/coca"
+    tools:context="com.example.bazz.cacacolasatis.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kola"
+        android:id="@+id/kolaBtn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:onClick="KolaOnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/icetea"
+        android:id="@+id/iceteaBtn"
+        android:layout_alignBottom="@+id/kolaBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:onClick="IceTeaOnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/icecekarsivi"
+        android:id="@+id/arsivBtn"
+        android:onClick="ArsivOnClick"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/sodaBtn"
+        android:layout_toStartOf="@+id/sodaBtn"
+        android:layout_marginBottom="80dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fanta"
+        android:id="@+id/fantaBtn"
+        android:layout_below="@+id/kolaBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="58dp"
+        android:onClick="FantaOnClick"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/soda"
+        android:id="@+id/sodaBtn"
+        android:layout_alignTop="@+id/ayranBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:onClick="SodaOnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ayran"
+        android:id="@+id/ayranBtn"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:onClick="AyranOnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seftali"
+        android:id="@+id/seftaliBtn"
+        android:layout_alignTop="@+id/fantaBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:onClick="SeftaliOnClick" />
+
+</RelativeLayout>
