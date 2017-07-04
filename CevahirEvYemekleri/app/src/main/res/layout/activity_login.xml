@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/admin_profile_background_img"
+    android:baselineAligned="false">
+    <include
+        layout="@layout/toolbar_template"/>
+
+    <TextView
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Yönetici Paneline Hoşgeldiniz... "
+        android:id="@+id/textView5"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:autoText="false"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:text="Kullanıcı Adı:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="#600000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/kullaniciET"
+        android:textColor="#000000" />
+
+    <TextView
+        android:text="Şifre:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="#600000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sifreET"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPassword"
+        android:textColor="#000000" />
+
+    <Button
+        android:layout_width="109dp"
+        android:layout_height="37dp"
+        android:text="Giriş"
+        android:id="@+id/girisBTN"
+        android:background="#600000"
+        android:singleLine="false"
+        android:layout_gravity="right" />
+
+
+</LinearLayout>

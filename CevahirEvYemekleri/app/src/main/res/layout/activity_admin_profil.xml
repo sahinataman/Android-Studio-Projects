@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminProfile"
+    android:background="@android:color/holo_orange_light">
+
+    <include
+        layout="@layout/toolbar_template"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/relativeLayout">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:weightSum="1">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/relativeLayout"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:background="#660000"
+                        android:text="Çorba Fiyatlarını Değiştir"
+                        android:textSize="16dp"
+                        android:id="@+id/corbaFYTdegistirBTN"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="100dp"></Button>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:background="#660000"
+                        android:text="Menü Fiyatlarını Değiştir"
+                        android:textSize="16dp"
+                        android:id="@+id/menuFYTdegistirBTN"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="100dp" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:text="Izgara Fiyatlarını Değiştir"
+                        android:textSize="16dp"
+                        android:background="#660000"
+                        android:id="@+id/izgaraFYTdegistirBTN"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="100dp"></Button>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:text="Tatlı Fiyatlarını Değiştir"
+                        android:textSize="16dp"
+                        android:background="#660000"
+                        android:id="@+id/tatliFYTdegistirBTN"
+                        android:layout_marginBottom="10dp"></Button>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:text="İçecek Fiyatlarını Değiştir"
+                        android:textSize="16dp"
+                        android:background="#660000"
+                        android:id="@+id/icecekFYTdegistirBTN"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="100dp"></Button>
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="@android:color/holo_orange_light"
+        android:paddingBottom="20dp"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Tarih"
+            android:id="@+id/tarihTV"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="ADSOYAD"
+            android:id="@+id/adsoyadTV"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_above="@+id/tcTV"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="afsssssssfa"
+            android:id="@+id/tcTV"
+            android:textSize="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Admin Paneli"
+            android:id="@+id/textView4"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/admin_prpfil_logo"
+            android:layout_below="@+id/textView4"
+            android:layout_alignRight="@+id/adsoyadTV"
+            android:layout_alignEnd="@+id/adsoyadTV"
+            android:layout_marginBottom="60dp"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:text="Lezzet Adına Herşey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView8"
+            android:layout_marginTop="105dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textAllCaps="false"
+            android:textStyle="normal|bold"
+            android:fontFamily="sans-serif"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

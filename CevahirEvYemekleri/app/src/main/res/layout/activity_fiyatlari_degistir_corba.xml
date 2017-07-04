@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/toolbar_template" />
+    <TextView
+        android:id="@+id/baslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:text="ÇORBA FİYATLARI GÜNCELLEŞTİRME"
+        android:textColor="#1d1d1d"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/corba_domates" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="DOMATES ÇORBASI"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/yeni_domates_fiyat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02"
+                        />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/corba_ezogelin" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="EZOGELİN ÇORBASI"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/yeni_ezogelin_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="5 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/corba_iskembe" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="İŞKEMBE ÇORBASI"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/yeni_iskembe_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="7 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/corba_kellepaca" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="KELLEPAÇA ÇORBASI"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/yeni_paca_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="7 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/corba_mercimek" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="MERCİMEK ÇORBASI"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/yeni_mercimek_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="5 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/corba_sebze" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="SEBZE ÇORBASI"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/yeni_sebze_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="6 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/corba_tarhana" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="TARHANA ÇORBASI"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/yeni_tarhana_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="5 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/corba_tavuksuyu" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="TAVUK SUYU ÇORBASI"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/yeni_tavuksuyu_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="5 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/corba_yayla" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="YAYLA ÇORBASI"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/yeni_yayla_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="6 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:text="Güncelle"
+                        android:textSize="16dp"
+                        android:id="@+id/guncelleBTN"
+                        android:elevation="0dp"
+                        android:background="@color/gulkurusu"></Button>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

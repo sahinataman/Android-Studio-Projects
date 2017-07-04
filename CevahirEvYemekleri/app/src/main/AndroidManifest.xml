@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.bazz.cevahirevyemekleri">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/cevahir_logom"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA-CDad84ydN31R4Q-G1fZcwEQafpgcolk"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginPage"
+            android:theme="@style/AppThemenew"/>
+        <activity
+            android:name=".AdminProfile"
+            android:theme="@style/AppThemenew"/>
+        <activity
+            android:name=".IletisimActivity"
+            android:theme="@style/AppThemenew"/>
+        <activity
+            android:name=".GunlerActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".GunlerdenPazartesiActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".GunlerdenSaliActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".GunlerdenCarsambaActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".GunlerdenPersembeActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".GunlerdenCumaActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".GunlerdenCumartesiActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".GunlerdenPazarActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".MenulerActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".IzgaralarActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".TatlilarActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".IceceklerActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".CorbalarActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".GaleriActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".GaleriDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".FiyatlariDegistirCorbaActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".FiyatlariDegistirMenuActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".FiyatlariDegistirIzgaraActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".FiyatlariDegistirIcecekActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".FiyatlariDegistirTatliActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".BildirimlerActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+    </application>
+
+</manifest>

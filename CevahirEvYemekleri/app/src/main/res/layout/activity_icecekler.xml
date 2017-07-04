@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/toolbar_template" />
+    <TextView
+        android:id="@+id/baslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:text="İÇECEKLER VE FİYATLARI"
+        android:textColor="#1d1d1d"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/icecekler_fanta" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="   FANTA"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/eski_fanta_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="4 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/icecekler_cacacola" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="   CACACOLA"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/eski_cacacola_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="4 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/icecekler_zerokola" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="   CACACOLA ZERO"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/eski_zero_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="4 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/icecekler_light_kola" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="   CACACOLA LİGHT"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/eski_light_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="4 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/icecekler_icetea_seftali" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="   İCE TEA ŞEFTALİ"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/eski_iceseftali_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="4 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/icecekle_icetea_limon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="   FUSE TEA LİMON"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/eski_fusetea_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="4 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/icecekler_sprite" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="   SPRİTE"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/eski_sprite_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="4 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/icecekler_seftali" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="   ŞEFTALİ NEKTAR"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/eski_sefnektar_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="4 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/icecekler_portakalseftali" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="   PORTAKAL NEKTAR"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/eski_pornektar_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="4 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/icecekler_visne" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="   VİŞNE NEKTAR"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/eski_visnenektar_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="4 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/icecekler_soda" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="   MEYVELİ SODA"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/eski_meyvelisoda_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="2 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/icecekler_sade_soda" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="   SADE SODA"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/eski_sadesoda_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="2 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/icecekler_ayran" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="   AYRAN"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/eski_ayran_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="1 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/icecekler_su" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="   SU"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/eski_su_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="1 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

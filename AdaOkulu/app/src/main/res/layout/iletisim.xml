@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#cff3fc">
+    <include
+        layout="@layout/iletisimbar"/>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:context="com.example.bazz.adaokulu.MapsActivity"
+        android:layout_weight="1.06" />
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="  iletisim@gaziantepadakoleji.com"
+        android:id="@+id/mailTV"
+        android:drawableLeft="@drawable/iletisim_mail_icon"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="@color/cast_intro_overlay_button_background_color"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="  Osmangazi Mah. 60.Cad.  Prime Mall (Acarsan Kavşağı)  GAZİANTEP"
+        android:id="@+id/adresTV"
+        android:drawableLeft="@drawable/iletisim_adres_icon"
+        android:background="@color/cast_intro_overlay_button_background_color"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="10dp"
+        android:autoText="false"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0(555)803 27 00-0(342)371 06 02"
+        android:id="@+id/araTV"
+        android:drawableLeft="@drawable/iletisim_ara_icon"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:gravity="center_vertical"
+        android:layout_gravity="left"
+        android:background="@color/cast_intro_overlay_button_background_color"
+        android:layout_marginLeft="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="348dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:weightSum="1"
+        android:background="#cff3fc">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/facebookBTN"
+            android:src="@drawable/iletisim_face_icon"
+            android:background="#cff3fc"
+            android:paddingTop="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/googleBTN"
+            android:src="@drawable/iletisim_google_icon"
+            android:background="#cff3fc"
+            android:paddingTop="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/twitterBTN"
+            android:src="@drawable/iletisim_twitter_icon"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:background="#cff3fc" />
+    </LinearLayout>
+
+
+</LinearLayout>

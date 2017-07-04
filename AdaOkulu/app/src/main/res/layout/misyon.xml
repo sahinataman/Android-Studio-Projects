@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:clickable="true"
+    android:background="#cff3fc"
+    android:baselineAligned="false">
+    <include
+        layout="@layout/template_toolbar"
+        android:id="@+id/include4" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="MİSYONUMUZ"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textColor="#0015ff"
+        android:layout_below="@+id/include4"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="101dp"
+        android:id="@+id/imageView5"
+        android:src="@drawable/misyon_image"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Atatürk ilke ve devrimlerinin ışığında, çağdaş eğitim politikasıyla, çok yönlü düşünme becerilerine sahip, hayat boyu öğrenmeyi ve demokratik tutumu yaşam biçimine dönüştürmüş, Türkçeyi ve birden fazla yabancı dili etkili kullanabilen, ulusal ve evrensel kültüre ve insan haklarına saygılı, sosyal gelişmelere ve doğaya karşı duyarlı, estetik duyguları gelişmiş, özgüveni yüksek, çağdaş, etkin ve katılımcı iyi birer vatandaş ve geleceğin liderlerini yetiştirmeyi amaçlar."
+        android:id="@+id/textView20"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal" />
+
+</RelativeLayout>

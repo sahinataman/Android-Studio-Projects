@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OBS.OgrenciProfili"
+    android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color">
+    <include
+        layout="@layout/template_toolbar"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"
+        android:paddingBottom="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/logo_ogrenci"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Tarih"
+            android:id="@+id/tarihTV"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="ADSOYAD"
+            android:id="@+id/adsoyadTV"
+            android:textColor="#e81313"
+            android:textSize="20dp"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="afsssssssfa"
+            android:id="@+id/numaraTV"
+            android:textSize="15dp"
+            android:layout_below="@+id/adsoyadTV"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Öğrenci Bilgi Sistemi"
+            android:id="@+id/textView4"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="sinif"
+            android:id="@+id/sinifTV"
+            android:layout_below="@+id/numaraTV"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="7dp"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignTop="@+id/scrollView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:drawableRight="@drawable/ogrenci_profil_sonuc_icon"
+                android:drawableLeft="@drawable/ogrenci_profil_sonuc_icon"
+                android:background="#cff3fc"
+                android:text="SINAV SONUCLARI"
+                android:textSize="15dp"
+                android:id="@+id/sinavsonucBTN"
+                android:layout_marginBottom="10dp"></Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:drawableRight="@drawable/ogrenci_profil_devamsizlik_icon"
+                android:drawableLeft="@drawable/ogrenci_profil_devamsizlik_icon"
+                android:background="#82d5d8"
+                android:text="DEVAMSIZLIK"
+                android:textSize="15dp"
+                android:id="@+id/devamsızlıkBTN"
+                android:layout_marginBottom="10dp"></Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:drawableRight="@drawable/ogrenci_profil_beslenme_icon"
+                android:drawableLeft="@drawable/ogrenci_profil_beslenme_icon"
+                android:text="BESLENME"
+                android:textSize="15dp"
+                android:background="#cff3fc"
+                android:id="@+id/beslenmeBTN"
+                android:layout_marginBottom="10dp"></Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:text="SERVİS SAATLERİ"
+                android:drawableRight="@drawable/ogrenci_profil_okulservisi_icon"
+                android:drawableLeft="@drawable/ogrenci_profil_okulservisi_icon"
+                android:textSize="15dp"
+                android:background="#82d5d8"
+                android:id="@+id/servisBTN"
+                android:layout_marginBottom="10dp"></Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:text="SINAV TAKVİMİ"
+                android:drawableRight="@drawable/ogrenci_profil_sinavtakvimi_icon"
+                android:drawableLeft="@drawable/ogrenci_profil_sinavtakvimi_icon"
+                android:textSize="15dp"
+                android:background="#cff3fc"
+                android:id="@+id/takvimBTN"
+                android:layout_marginBottom="10dp"></Button>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+

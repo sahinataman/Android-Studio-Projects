@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8f9fe">
+    <include
+        layout="@layout/template_toolbar"
+        android:id="@+id/include3" />
+    <ImageView
+        android:layout_width="396dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/okul_servis_saatleri"
+        android:id="@+id/imageView4"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="2015-2016"
+        android:id="@+id/textView18"
+        android:layout_below="@+id/include3"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ADA OKULLARI SERVİS SAATLERİ"
+        android:id="@+id/textView19"
+        android:layout_below="@+id/textView18"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

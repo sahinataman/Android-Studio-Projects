@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".MainActivity">
+
+    <item android:id="@+id/action_arama"
+    android:icon="@drawable/anasayfa_admin_icon"
+    android:title="Yönetici Girişi"
+    android:onClick="GirisSayfasi"
+    app:showAsAction="always"/>
+
+</menu>

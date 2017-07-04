@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/viewflipper"
+        android:weightSum="1"
+        android:background="#e6f8f8">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="CEVAHİR EV YEMEKLERİ"
+            android:singleLine="true"
+            android:id="@+id/anabaslikTV"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/darkgreen"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/scroller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="Şok Şok Şok Öğrenci Menü (Pilav + Anayemek +Çorba + Salata) 8 TL Şok Şok Şok"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="232dp"
+            android:id="@+id/main_content">
+
+            <ViewFlipper
+                android:id="@+id/viewflipper"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:autoStart="true"
+                android:touchscreenBlocksFocus="false"
+                android:animateFirstView="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img"
+                    android:baselineAlignBottom="false"
+                    android:adjustViewBounds="false"
+                    android:longClickable="false"
+                    android:cropToPadding="false"
+                    android:contextClickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="fitXY"
+                    android:id="@+id/foodIMG0" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img7"
+                    android:id="@+id/foodIMG1"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img2"
+                    android:id="@+id/foodIMG2"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img3"
+                    android:id="@+id/foodIMG3"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img4"
+                    android:id="@+id/foodIMG4"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img5"
+                    android:id="@+id/foodIMG5"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img6"
+                    android:id="@+id/foodIMG6"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img7"
+                    android:id="@+id/foodIMG7"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img8"
+                    android:id="@+id/foodIMG8"
+                    android:scaleType="fitXY" />
+            </ViewFlipper>
+
+
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:drawableRight="@drawable/logo"
+                android:drawableLeft="@drawable/logo"
+                android:background="#cff3fc"
+                android:text="VİZYON"
+                android:textSize="20dp"
+                android:id="@+id/vizyonTXT"
+                android:layout_marginBottom="10dp"></Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:drawableRight="@drawable/logo"
+                android:drawableLeft="@drawable/logo"
+                android:background="#82d5d8"
+                android:text="MİSYON"
+                android:textSize="20dp"
+                android:id="@+id/misyonTXT"
+                android:layout_marginBottom="10dp"></Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:drawableRight="@drawable/logo"
+                android:drawableLeft="@drawable/logo"
+                android:text="EĞİTİM"
+                android:textSize="20dp"
+                android:background="#cff3fc"
+                android:id="@+id/egitimTXT"
+                android:layout_marginBottom="10dp"></Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:drawableRight="@drawable/logo"
+                android:drawableLeft="@drawable/logo"
+                android:text="GALERİ"
+                android:textSize="20dp"
+                android:background="#82d5d8"
+                android:id="@+id/galeriTXT"
+                android:layout_marginBottom="10dp"></Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:drawableRight="@drawable/logo"
+                android:drawableLeft="@drawable/logo"
+                android:text="BİLDİRİMLER"
+                android:textSize="20dp"
+                android:background="#cff3fc"
+                android:id="@+id/bildirimTXT"
+                android:layout_marginBottom="10dp"></Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:drawableRight="@drawable/logo"
+                android:drawableLeft="@drawable/logo"
+                android:text="İLETİŞİM"
+                android:textSize="20dp"
+                android:background="#82d5d8"
+                android:id="@+id/iletisimTXT"
+                android:layout_marginBottom="10dp"></Button>
+
+        </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:id="@+id/solListeMenu"
+        android:background="#e6f8f8"
+        android:choiceMode="singleChoice"
+        android:layout_gravity="start"></ListView>
+
+</android.support.v4.widget.DrawerLayout>

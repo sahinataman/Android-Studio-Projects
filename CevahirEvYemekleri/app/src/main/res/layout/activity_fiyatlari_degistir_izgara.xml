@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+    >
+    <include layout="@layout/toolbar_template" />
+    <TextView
+        android:id="@+id/baslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:text="IZGARA FİYATLARI GÜNCELLEŞTİRME"
+        android:textColor="#1d1d1d"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/relativeLayout"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!-- TAVUK IZGARA-->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_weight="15.10">
+
+
+            <LinearLayout
+                android:id="@+id/thumbnaila"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="7dip"
+                android:padding="2dip" >
+
+                <ImageView
+                    android:id="@+id/ogrenci_menu_img"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:src="@drawable/izgara_tavuk_img" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layouts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/ogrenci_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="60dip"
+                    android:layout_weight="0.23"
+                    android:paddingRight="5dip"
+                    android:text="Tavuk  + Pilav + Közlenmiş Biber / Domates"
+                    android:textColor="#1d1d1d"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:id="@+id/yeni_tavukizgara_fiyati"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 TL"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_weight="0.02"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/from_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TAVUK IZGARA"
+                android:textColor="#040404"
+                android:typeface="sans"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/thumbnaila"
+                android:layout_toEndOf="@+id/thumbnaila"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <!-- IZGARA KÖFTE-->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_weight="15.10">
+
+
+            <LinearLayout
+                android:id="@+id/kofte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="7dip"
+                android:padding="2dip" >
+
+                <ImageView
+                    android:id="@+id/kofte_img"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:src="@drawable/izgara_kofte_img" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linears_layouts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/ogrencis_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="60dip"
+                    android:layout_weight="0.23"
+                    android:paddingRight="5dip"
+                    android:text="Köfte + Pilav + Közlenmiş Biber / Domates"
+                    android:textColor="#1d1d1d"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:id="@+id/yeni_kofte_fiyati"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16 TL"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_weight="0.02"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fro_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IZGARA KÖFTE"
+                android:textColor="#040404"
+                android:typeface="sans"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/kofte"
+                android:layout_toEndOf="@+id/kofte"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <!-- IZGARA KÖFTE-->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_weight="15.10">
+
+
+            <LinearLayout
+                android:id="@+id/karisik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="7dip"
+                android:padding="2dip" >
+
+                <ImageView
+                    android:id="@+id/karisikizg"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:src="@drawable/izgara_karisik_img" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearslayouts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/izgara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="60dip"
+                    android:layout_weight="0.23"
+                    android:paddingRight="5dip"
+                    android:text="Köfte + Kanat + Tavuk + Pilav + Közlenmiş Biber"
+                    android:textColor="#1d1d1d"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:id="@+id/yeni_karisik_fiyati"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16 TL"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_weight="0.02"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fromm_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KARIŞIK IZGARA"
+                android:textColor="#040404"
+                android:typeface="sans"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/karisik"
+                android:layout_toEndOf="@+id/karisik"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <!-- TAVUK ŞİŞ -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_weight="15.10">
+
+
+            <LinearLayout
+                android:id="@+id/tavuksis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="7dip"
+                android:padding="2dip" >
+
+                <ImageView
+                    android:id="@+id/tavuksisizg"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:src="@drawable/izgara_tavuksis_img" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearslayosuts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tavuksiss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="60dip"
+                    android:layout_weight="0.23"
+                    android:paddingRight="5dip"
+                    android:text="Tavuk şiş + Pilav + Közlenmiş Biber / Domates"
+                    android:textColor="#1d1d1d"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:id="@+id/yeni_sis_fiyati"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12.5 TL"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_weight="0.14"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fr_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TAVUK ŞİŞ"
+                android:textColor="#040404"
+                android:typeface="sans"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/tavuksis"
+                android:layout_toEndOf="@+id/tavuksis"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="10dp"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <!-- ADANA KEBAP -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_weight="15.10">
+
+
+            <LinearLayout
+                android:id="@+id/adana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="7dip"
+                android:padding="2dip" >
+
+                <ImageView
+                    android:id="@+id/adanakebap"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:src="@drawable/izgara_adana_kebap_img" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearslayosut1s"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tavukkebap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="60dip"
+                    android:layout_weight="0.23"
+                    android:paddingRight="5dip"
+                    android:text="Kebap + Pilav + Közlenmiş Biber / Domates"
+                    android:textColor="#1d1d1d"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:id="@+id/yeni_kebap_fiyati"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18 TL"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_weight="0.02"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADANA KEBAP"
+                android:textColor="#040404"
+                android:typeface="sans"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/adana"
+                android:layout_toEndOf="@+id/adana"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <!-- IZGARA KANAT-->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_weight="15.10">
+
+
+            <LinearLayout
+                android:id="@+id/kanat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="7dip"
+                android:padding="2dip" >
+
+                <ImageView
+                    android:id="@+id/izgkanat"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:src="@drawable/izgara_kanat_img" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lineat1s"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/izggkanat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="60dip"
+                    android:layout_weight="0.23"
+                    android:paddingRight="5dip"
+                    android:text="Kanat + Pilav + Közlenmiş Biber / Domates"
+                    android:textColor="#1d1d1d"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:id="@+id/yeni_kanat_fiyati"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 TL"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_weight="0.02"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fnam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IZGARA KANAT"
+                android:textColor="#040404"
+                android:typeface="sans"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/kanat"
+                android:layout_toEndOf="@+id/kanat"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <!-- TAVUK BUT-->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_weight="15.10">
+
+
+            <LinearLayout
+                android:id="@+id/but"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="7dip"
+                android:padding="2dip" >
+
+                <ImageView
+                    android:id="@+id/tavukbut"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:src="@drawable/izgara_tavukbut_img" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tvk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/buttavuk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="60dip"
+                    android:layout_weight="0.23"
+                    android:paddingRight="5dip"
+                    android:text="Kanat + Pilav + Közlenmiş Biber / Domates"
+                    android:textColor="#1d1d1d"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:id="@+id/yeni_but_fiyati"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 TL"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_weight="0.02"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/namee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IZGARA TAVUK BUT"
+                android:textColor="#040404"
+                android:typeface="sans"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/but"
+                android:layout_toEndOf="@+id/but"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_weight="15.10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="Güncelle"
+                    android:textSize="16dp"
+                    android:id="@+id/guncelleBTN"
+                    android:elevation="0dp"
+                    android:background="@color/gulkurusu"></Button>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</ScrollView>
+
+</LinearLayout>

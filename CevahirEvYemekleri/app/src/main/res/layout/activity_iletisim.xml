@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#ffffff">
+    <include
+        layout="@layout/toolbar_iletisim"/>
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.06"
+        tools:context="com.example.bazz.cevahirevyemekleri.IletisimActivity" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="  cevahir@cevahirevyemekleri.com"
+        android:id="@+id/mailTV"
+        android:drawableLeft="@drawable/iletisim_mail_icon"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="#ffffff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="  Kemalpaşa Mah Barlar Sok No:12/B"
+        android:id="@+id/adresTV"
+        android:drawableLeft="@drawable/iletisim_adres_icon"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0(286) 213 16 00 - 0(286) 213 06 16"
+        android:id="@+id/araTV"
+        android:drawableLeft="@drawable/iletisim_ara_icon"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:gravity="center_vertical"
+        android:layout_gravity="left"
+        android:background="#ffffff"
+        android:autoText="false" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="443dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:weightSum="1"
+        android:background="#ffffff">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/facebookBTN"
+            android:src="@drawable/iletisim_face_icon"
+            android:background="#ffffff"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="35dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forsquareBTN"
+            android:src="@drawable/iletisim_foursquare_icon"
+            android:background="#ffffff"
+            android:paddingTop="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:id="@+id/twitterBTN"
+            android:src="@drawable/iletisim_twitter_icon"
+
+            android:background="#ffffff"
+            android:layout_marginTop="15dp" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/websiteBTN"
+            android:src="@drawable/iletisim_website_icon"
+
+            android:background="#ffffff"
+            android:paddingTop="10dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

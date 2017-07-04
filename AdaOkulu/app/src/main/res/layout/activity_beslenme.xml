@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cast_intro_overlay_button_background_color">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/beslenme_aylik_yemek"
+        android:id="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="39dp" />
+
+    <include
+        layout="@layout/template_toolbar"
+        android:id="@+id/include" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="tarih"
+        android:id="@+id/tarihTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_vertical"
+        android:background="@color/accent_material_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="yemek1"
+        android:id="@+id/anayemekTV"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/corbaTV"
+        android:layout_alignLeft="@+id/yemekTV"
+        android:layout_alignStart="@+id/yemekTV"
+        android:layout_marginBottom="15dp"
+        android:background="@color/accent_material_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="yemek2"
+        android:id="@+id/yemekTV"
+        android:focusableInTouchMode="true"
+        android:layout_below="@+id/anayemekTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_vertical"
+        android:background="@color/accent_material_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="tatli"
+        android:id="@+id/tatliTV"
+        android:layout_below="@+id/yemekTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_vertical"
+        android:background="@color/accent_material_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="icecek"
+        android:id="@+id/icecekTV"
+        android:layout_below="@+id/tatliTV"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:background="@color/accent_material_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="corba"
+        android:id="@+id/corbaTV"
+        android:layout_below="@+id/tarihTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_vertical"
+        android:background="@color/accent_material_dark" />
+
+</RelativeLayout>

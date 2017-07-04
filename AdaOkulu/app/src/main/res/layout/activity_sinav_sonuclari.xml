@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8f9fe">
+
+    <include
+        layout="@layout/template_toolbar"/>
+
+    <ImageView
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sınavsonucIV"
+        android:src="@drawable/sinav_sonuclari_grafik_icon"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sınavsonucIV"
+        android:id="@+id/tableLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="1.SINAV"
+                android:id="@+id/textView8"
+                android:layout_column="5"
+                android:layout_marginLeft="20dp"
+                android:textColor="#0288D1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="2.SINAV"
+                android:id="@+id/textView9"
+                android:layout_column="11"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:textColor="#0288D1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="3.SINAV"
+                android:id="@+id/textView11"
+                android:layout_column="14"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="12dp"
+                android:textColor="#0288D1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="MATEMATİK            :"
+                android:id="@+id/textView7"
+                android:layout_column="0"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#0288D1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="mat1TV"
+                android:id="@+id/mat1TV"
+                android:layout_column="5"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="mat2TV"
+                android:id="@+id/mat2TV"
+                android:layout_column="11"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="mat3TV"
+                android:id="@+id/mat3TV"
+                android:layout_column="14"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="SOSYAL BİLGİLER   :"
+                android:layout_column="0"
+                android:layout_marginLeft="5dp"
+                android:textColor="#0288D1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="sosyal1TV"
+                android:id="@+id/sosyal1TV"
+                android:layout_column="5"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="sosyal2TV"
+                android:id="@+id/sosyal2TV"
+                android:layout_column="11"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="sosyal3TV"
+                android:id="@+id/sosyal3TV"
+                android:layout_column="14"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="TÜRKÇE                    :"
+                android:layout_column="0"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#0288D1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="turkce1TV"
+                android:id="@+id/turkce1TV"
+                android:layout_column="5"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="turkce2TV"
+                android:id="@+id/turkce2TV"
+                android:layout_column="11"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="turkce3TV"
+                android:id="@+id/turkce3TV"
+                android:layout_column="14"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="FEN BİLGİSİ             :"
+                android:id="@+id/textView10"
+                android:layout_column="0"
+                android:layout_marginLeft="5dp"
+                android:textColor="#0288D1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="fen1TV"
+                android:id="@+id/fen1TV"
+                android:layout_column="5"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="fen2TV"
+                android:id="@+id/fen2TV"
+                android:layout_column="11"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="fen3TV"
+                android:id="@+id/fen3TV"
+                android:layout_column="14"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_column="0"
+                android:layout_span="15"></LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="      GENEL DERS ORTALAMALARI"
+                android:id="@+id/textView12"
+                android:layout_column="0"
+                android:layout_span="15"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:textSize="15dp"
+                android:textColor="#ef0a0e"
+                android:paddingLeft="35dp"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="MATEMATİK            :"
+                android:id="@+id/textView13"
+                android:layout_column="0"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ef0a0e"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="matgenel"
+                android:id="@+id/matgenel"
+                android:layout_column="5"
+                android:layout_marginTop="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="SOSYAL BİLGİLER   :"
+                android:id="@+id/textView14"
+                android:layout_column="0"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ef0a0e"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="sosyalgenel"
+                android:id="@+id/sosyalgenel"
+                android:layout_column="5"
+                android:layout_marginTop="5dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="TÜRKÇE                    :"
+                android:id="@+id/textView15"
+                android:layout_column="0"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ef0a0e"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="turkcegenel"
+                android:id="@+id/turkcegenel"
+                android:layout_column="5"
+                android:layout_marginTop="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="FEN BİLGİSİ             :"
+                android:id="@+id/textView16"
+                android:layout_column="0"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ef0a0e"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="fengenel"
+                android:id="@+id/fengenel"
+                android:layout_column="5"
+                android:layout_marginTop="10dp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="isimTV"
+        android:id="@+id/isimTV"
+        android:layout_above="@+id/tableLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:textColor="#b20003" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="noTV"
+        android:id="@+id/noTV"
+        android:layout_above="@+id/tableLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:textColor="#b20003" />
+
+
+</RelativeLayout>

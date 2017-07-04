@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/toolbar_template" />
+    <TextView
+        android:id="@+id/baslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:text="TATLILAR VE FİYATLARI"
+        android:textColor="#1d1d1d"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:id="@+id/sutlac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:id="@+id/sutlc"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/tatlilar_sutlac" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/kucuk_tabak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="SÜTLAÇ"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/eski_sutlac_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="5 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:id="@+id/trilice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:id="@+id/trilice1"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/tatlilar_trilice" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="TRİLİÇE"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/eski_trilice_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="7 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:id="@+id/kazandibi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:id="@+id/kazandibi1"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/tatlilar_kazandibi" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearslayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/kazan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="KAZANDİBİ"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/eski_kazandibi_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="5 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:id="@+id/tiramisuu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:id="@+id/tiramisu"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/tatlilar_tiramisu" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearslasyout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tramisu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="TİRAMİSU"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/eski_tiramisu_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="5 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:id="@+id/revani"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:id="@+id/rewani"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/tatlilar_revani" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearslasysoust"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/revaani"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="REVANİ"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/eski_revani_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="6 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:id="@+id/mzaik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:id="@+id/mozik"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/tatlilar_mozaik" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearslasyoust"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/mozaik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="MOZAİK"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/eski_mozaik_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="5 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:id="@+id/kemalpasa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:id="@+id/k"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/tatlilar_kemalpasa" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/keml"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/kpasa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="KEMALPAŞA"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/eski_kemalpasa_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="5 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_weight="15.10"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:id="@+id/irmik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="7dip"
+                    android:padding="2dip" >
+
+                    <ImageView
+                        android:id="@+id/irmk"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:src="@drawable/tatlilar_irmik" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearslasyssust"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/irrmik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="60dip"
+                        android:layout_weight="0.23"
+                        android:paddingRight="5dip"
+                        android:text="İRMİK"
+                        android:textColor="#1d1d1d"
+                        android:textSize="12dip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/eski_irmik_fiyati"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingRight="25dip"
+                        android:text="6 TL"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_weight="0.02" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

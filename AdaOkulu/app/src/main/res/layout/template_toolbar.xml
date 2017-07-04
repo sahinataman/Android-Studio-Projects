@@ -1,0 +1,27 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bildirimToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorPrimary1">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/geriBTN"
+        android:background="@color/colorPrimary1"
+        android:src="@drawable/iletisim_toolbar_geri_icon"
+        android:layout_gravity="left"
+        android:paddingTop="2dp"
+        android:layout_marginRight="20dp"
+         />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/anatoolbarlogo"
+        android:background="@color/colorPrimary1"
+        android:src="@drawable/logo_dijital"
+        android:layout_gravity="center"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="220dp" />
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gunlerden_pazartesi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.bazz.cevahirevyemekleri.GunlerdenPazartesiActivity">
+    <include layout="@layout/toolbar_template"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="Pazartesi Günü Çıkan Yemekler"
+            android:textSize="20sp" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="Pirinç Pilavı"
+                    android:textSize="16dp"
+                    android:id="@+id/yemek1"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="0dp"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:background="#660000"></Button>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="Beşemel Soslu tavuk"
+                    android:textSize="16dp"
+                    android:id="@+id/yemek2"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="0dp"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:background="#660000"></Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="Musakka"
+                    android:textSize="16dp"
+                    android:id="@+id/yemek3"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="0dp"
+                    android:background="#660000"
+                    style="@style/Widget.AppCompat.Button.Colored"></Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="Mantı"
+                    android:textSize="16dp"
+                    android:id="@+id/yemek4"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="0dp"
+                    android:background="#660000"
+                    style="@style/Widget.AppCompat.Button.Colored"></Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="Kuru Fasulye"
+                    android:textSize="16dp"
+                    android:id="@+id/yemek5"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="0dp"
+                    android:background="#660000"
+                    style="@style/Widget.AppCompat.Button.Colored"></Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="Tavuk Sote"
+                    android:textSize="16dp"
+                    android:id="@+id/yemek6"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="0dp"
+                    android:background="#660000"
+                    style="@style/Widget.AppCompat.Button.Colored"></Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="İzmir Köfte"
+                    android:textSize="16dp"
+                    android:id="@+id/yemek7"
+                    android:background="#660000"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="0dp"
+                    style="@style/Widget.AppCompat.Button.Colored"></Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="Püre"
+                    android:textSize="16dp"
+                    android:id="@+id/yemek8"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="0dp"
+                    android:background="#660000"
+                    style="@style/Widget.AppCompat.Button.Colored"></Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="Fırın makarna"
+                    android:textSize="16dp"
+                    android:id="@+id/yemek9"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="0dp"
+                    android:background="#660000"
+                    style="@style/Widget.AppCompat.Button.Colored"></Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="Sosis Sote"
+                    android:textSize="16dp"
+                    android:id="@+id/yemek10"
+                    android:layout_marginBottom="5dp"
+                    android:background="#660000"
+                    android:layout_marginTop="5dp"
+                    android:elevation="0dp"
+                    style="@style/Widget.AppCompat.Button.Colored"></Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="Nohut"
+                    android:background="#660000"
+                    android:textSize="16dp"
+                    android:id="@+id/yemek11"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="0dp"
+                    style="@style/Widget.AppCompat.Button.Colored"></Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="Misket Köfte"
+                    android:background="#660000"
+                    android:textSize="16dp"
+                    android:id="@+id/yemek12"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="0dp"
+                    style="@style/Widget.AppCompat.Button.Colored"></Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="Körü soslu tavuk"
+                    android:textSize="16dp"
+                    android:id="@+id/yemek13"
+                    android:layout_marginBottom="5dp"
+                    android:background="#660000"
+                    android:layout_marginTop="5dp"
+                    android:elevation="0dp"
+                    style="@style/Widget.AppCompat.Button.Colored"></Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="Rus salatası"
+                    android:textSize="16dp"
+                    android:id="@+id/yemek14"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#660000"
+                    android:elevation="0dp"
+                    style="@style/Widget.AppCompat.Button.Colored"></Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="Mantarlı Makarna"
+                    android:textSize="16dp"
+                    android:id="@+id/yemek15"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="0dp"
+                    android:background="#660000"
+                    style="@style/Widget.AppCompat.Button.Colored"></Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="Kuskus"
+                    android:textSize="16dp"
+                    android:id="@+id/yemek16"
+                    android:background="#660000"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="0dp"
+                    style="@style/Widget.AppCompat.Button.Colored"></Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="Kıymalı Patates"
+                    android:textSize="16dp"
+                    android:id="@+id/yemek17"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="0dp"
+                    android:background="#660000"
+                    style="@style/Widget.AppCompat.Button.Colored"></Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="Spagetti"
+                    android:textSize="16dp"
+                    android:id="@+id/yemek18"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#660000"
+                    android:elevation="0dp"
+                    style="@style/Widget.AppCompat.Button.Colored"></Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="Zeytinyağlılar"
+                    android:textSize="16dp"
+                    android:id="@+id/yemek19"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#660000"
+                    android:elevation="0dp"
+                    style="@style/Widget.AppCompat.Button.Colored"></Button>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="Yoğurtlular"
+                    android:textSize="16dp"
+                    android:background="#660000"
+                    android:id="@+id/yemek20"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="0dp"
+                    style="@style/Widget.AppCompat.Button.Colored"></Button>
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>
